@@ -1,0 +1,244 @@
+@import "functions";
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://themes.googleusercontent.com/static/fonts/oswald/v8/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter-Regular'), url(http://themes.googleusercontent.com/static/fonts/bitter/v5/SHIcXhdd5RknatSgOzyEkA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web'), local('TitilliumWeb-Regular'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/7XUFZ5tgS-tD6QamInJTcdGU7DQ8I6RFMlK0vgclk7w.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v5/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Yanone Kaffeesatz Bold'), local('YanoneKaffeesatz-Bold'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v5/We_iSDqttE3etzfdfhuPRWwXwFHHZlCwprwJOQ-Se7k.woff) format('woff');
+}
+
+$orange: #DD4B39;
+$lightblue: #7EC8EE;
+$yellow: #F7E777;
+$green: #7AFF88;
+
+BODY {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:300;
+  font-size: 14px;
+  line-height:18px;
+
+  background: #313131;
+  color: rgba(245,245,245,1);
+  @include zero;
+  @include transition(height 1.2s ease);
+
+}
+
+DIV	{
+  @include zero;
+}
+
+A	{
+  text-decoration:none;
+  color: rgba(255,255,255,1);
+}
+
+.left{
+  float:left;
+}
+
+.alignleft{
+  text-align: left;
+}
+
+.alignright{
+  text-align: right;
+}
+
+.right{
+  float:right;
+}
+
+.center{
+  text-align: center;
+}
+
+H1,H2,H3,H4,H5,H6{
+  font-family: 'Roboto', sans-serif;
+  text-transform:uppercase;
+  //letter-spacing: 1px;
+  font-weight:700;
+  padding:0;
+  margin:0;
+}
+
+H1{font-size:36px;line-height:44px;}
+H2{font-size:30px;line-height:38px;}
+H3{font-size:26px;line-height:32px;}
+H4{font-size:22px;line-height:28px;}
+H5{font-size:18px;line-height:22px;}
+H6{font-size:14px;line-height:20px;}
+
+.clear-fix{
+  zoom: 1;
+}
+
+.clear-fix:after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.row{
+  display: block;
+  margin:10px 5px;
+  border-left:5px solid #c90509;
+  margin-top:25px;
+  padding-left:10px;
+}
+
+.member-con{
+  background: #454545;
+  padding: 18px;
+  margin: 11px;
+  width: 400px;
+  height: 88px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  @include border-radius(5px);
+  font-size:16px;
+  line-height:22px;
+  overflow:hidden;
+  border: 3px solid #313131;
+  cursor:pointer;
+
+  &:hover{
+    border: 3px solid #F1F1F1;
+  }
+}
+
+.name{
+  font-family: 'Oswald', sans-serif;
+  font-weight:700;
+  font-size:36px;
+  line-height:36px;
+  text-transform:uppercase;
+  display: block;
+  margin:0px;
+
+}
+
+.title{
+  display: inline-block;
+}
+
+.date-employed{
+  display: inline-block;
+}
+
+.sep{
+  display: inline-block;
+}
+
+.sep:after{
+  display: inline-block;
+  content:" - ";
+  padding:4px;
+}
+
+.color{
+  width:155px;
+  height:200px;
+  @include rotate(15deg);
+  position:absolute;
+  top:-20px;
+  right:-20px;
+  z-index:2;
+  @include box-shadow(rgba(0,0,0,0.6) 0px 0px 15px);
+}
+
+.red{
+
+}
+
+.player-contacts{
+  position:absolute;
+  bottom:10px;
+  left:15px;
+
+  ul{
+    padding:0;
+    margin:0;
+
+    li{
+      display: inline-block;
+      padding:0;
+      margin:0;
+      font-size:20px;
+
+      i{
+        padding:4px;
+      }
+    }
+  }
+}
+
+.player-icon img{
+  position:relative;
+  height:88px;
+  width:auto;
+  margin:1px;
+  z-index:5;
+  @include border-radius(3px);
+}

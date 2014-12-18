@@ -1,0 +1,300 @@
+/* _functions.scss */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Oswald Bold"), local("Oswald-Bold"), url(http://themes.googleusercontent.com/static/fonts/oswald/v8/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bitter-Regular"), url(http://themes.googleusercontent.com/static/fonts/bitter/v5/SHIcXhdd5RknatSgOzyEkA.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Regular"), local("Roboto-Regular"), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/2UX7WLTfW3W8TclTUvlFyQ.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Titillium Web"), local("TitilliumWeb-Regular"), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/7XUFZ5tgS-tD6QamInJTcdGU7DQ8I6RFMlK0vgclk7w.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Titillium WebLight"), local("TitilliumWeb-Light"), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Yanone Kaffeesatz Regular"), local("YanoneKaffeesatz-Regular"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v5/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Yanone Kaffeesatz Bold"), local("YanoneKaffeesatz-Bold"), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v5/We_iSDqttE3etzfdfhuPRWwXwFHHZlCwprwJOQ-Se7k.woff) format("woff");
+}
+
+/* line 70, scss/index.scss */
+BODY {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  background: #313131;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: height 1.2s ease;
+  -moz-transition: height 1.2s ease;
+  -o-transition: height 1.2s ease;
+  transition: height 1.2s ease;
+}
+
+/* line 83, scss/index.scss */
+DIV {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 87, scss/index.scss */
+A {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 92, scss/index.scss */
+.left {
+  float: left;
+}
+
+/* line 96, scss/index.scss */
+.alignleft {
+  text-align: left;
+}
+
+/* line 100, scss/index.scss */
+.alignright {
+  text-align: right;
+}
+
+/* line 104, scss/index.scss */
+.right {
+  float: right;
+}
+
+/* line 108, scss/index.scss */
+.center {
+  text-align: center;
+}
+
+/* line 112, scss/index.scss */
+H1, H2, H3, H4, H5, H6 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 121, scss/index.scss */
+H1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+/* line 122, scss/index.scss */
+H2 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+/* line 123, scss/index.scss */
+H3 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+/* line 124, scss/index.scss */
+H4 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+/* line 125, scss/index.scss */
+H5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 126, scss/index.scss */
+H6 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 128, scss/index.scss */
+.clear-fix {
+  zoom: 1;
+}
+
+/* line 132, scss/index.scss */
+.clear-fix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 141, scss/index.scss */
+.row {
+  display: block;
+  margin: 10px 5px;
+  border-left: 5px solid #c90509;
+  margin-top: 25px;
+  padding-left: 10px;
+}
+
+/* line 149, scss/index.scss */
+.member-con {
+  background: #454545;
+  padding: 18px;
+  margin: 11px;
+  width: 400px;
+  height: 88px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  overflow: hidden;
+  border: 3px solid #313131;
+  cursor: pointer;
+}
+/* line 166, scss/index.scss */
+.member-con:hover {
+  border: 3px solid #F1F1F1;
+}
+
+/* line 171, scss/index.scss */
+.name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0px;
+}
+
+/* line 182, scss/index.scss */
+.title {
+  display: inline-block;
+}
+
+/* line 186, scss/index.scss */
+.date-employed {
+  display: inline-block;
+}
+
+/* line 190, scss/index.scss */
+.sep {
+  display: inline-block;
+}
+
+/* line 194, scss/index.scss */
+.sep:after {
+  display: inline-block;
+  content: " - ";
+  padding: 4px;
+}
+
+/* line 200, scss/index.scss */
+.color {
+  width: 155px;
+  height: 200px;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 2;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 15px;
+}
+
+/* line 215, scss/index.scss */
+.player-contacts {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+/* line 220, scss/index.scss */
+.player-contacts ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 224, scss/index.scss */
+.player-contacts ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+/* line 230, scss/index.scss */
+.player-contacts ul li i {
+  padding: 4px;
+}
+
+/* line 237, scss/index.scss */
+.player-icon img {
+  position: relative;
+  height: 88px;
+  width: auto;
+  margin: 1px;
+  z-index: 5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
